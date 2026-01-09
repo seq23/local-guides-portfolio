@@ -160,3 +160,37 @@ section {
 .listing-card:last-child {
   border-bottom: none;
 }
+.global-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.primary-nav,
+.market-nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.market-nav {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.market-label {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+.brand {
+  font-weight: 700;
+  text-decoration: none;
+}
