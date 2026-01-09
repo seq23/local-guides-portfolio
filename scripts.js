@@ -1,4 +1,3 @@
-
 // scripts.js — Final, production-ready
 // Dynamic listings, sponsors, and hotlink support
 // HTML IMMUTABLE — all logic lives here
@@ -24,7 +23,7 @@ function loadPhoenix(category) {
   fetch("/data/phoenix_listings.json")
     .then(res => res.json())
     .then(data => {
-      renderListings(data, category);
+      renderPhoenixListings(data);
       injectCityWideSponsor();
     })
     .catch(err => console.error("Phoenix load failed:", err));
@@ -46,7 +45,28 @@ function loadFutureCity(city, category) {
 }
 
 /* -----------------------------
-   LISTINGS RENDER
+   PHOENIX LISTINGS RENDER (NEW MODEL)
+----------------------------- */
+
+function renderPhoenixListings(firms) {
+  const verifiedEl = document.getElementById("verified-listings");
+  const otherEl = document.getElementById("other-listings");
+  if (!verifiedEl || !otherEl) return;
+
+  verifiedEl.innerHTML = "";
+  otherEl.innerHTML = "";
+
+  const visible = firms.filter(f => f.display === true);
+
+  const verified = visible.filter(f => f.verified === true);
+  const other = visible.filter(f => f.verified !== true);
+
+  verified.forEach(f => verifiedEl.appendChild(listingCard(f)));
+  other.forEach(f => otherEl.appendChild(listingCard(f)));
+}
+
+/* -----------------------------
+   LEGACY RENDER (FUTURE CITIES)
 ----------------------------- */
 
 function renderListings(firms, category) {
@@ -62,28 +82,40 @@ function renderListings(firms, category) {
   const verified = firms.filter(f => f.categories?.[category] === true);
   const other = firms.filter(f => f.categories?.[category] === false);
 
-  verified.forEach(f => verifiedEl.appendChild(listingCard(f, true)));
+  verified.forEach(f => verifiedEl.appendChild(listingCard(f)));
 
   const MIN_OTHER = 10;
   other.slice(0, MIN_OTHER).forEach(f =>
-    otherEl.appendChild(listingCard(f, false))
+    otherEl.appendChild(listingCard(f))
   );
 }
 
-function listingCard(firm, verified) {
+/* -----------------------------
+   LISTING CARD
+----------------------------- */
+
+function listingCard(firm) {
   const card = document.createElement("div");
   card.className = "listing-card";
 
+  const websiteLink = firm.website
+    ? `<a href="${firm.website}" target="_blank" rel="noopener noreferrer">
+         Visit firm website
+       </a>`
+    : "";
+
+  const labels = [];
+  if (firm.sponsored) labels.push("Advertising");
+  if (firm.verified) labels.push("Verified listing");
+
   card.innerHTML = `
-    <h3>${firm.firm}</h3>
-    <a href="${firm.url}" target="_blank" rel="noopener noreferrer">
-      Visit firm website
-    </a>
-    <p class="listing-note">
-      ${verified
-        ? "Verified for this category (explicit on firm site)."
-        : "Not explicitly tagged — verify on firm site."}
-    </p>
+    <h3>${firm.name}</h3>
+    ${websiteLink}
+    ${
+      labels.length
+        ? `<p class="listing-note">${labels.join(" · ")}</p>`
+        : `<p class="listing-note">Directory listing — no endorsement implied.</p>`
+    }
   `;
 
   return card;
