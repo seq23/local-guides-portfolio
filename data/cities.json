@@ -1,0 +1,52 @@
+{
+  "cities": [
+    {
+      "slug": "phoenix",
+      "name": "Phoenix, AZ",
+      "status": "live",
+      "buyout_price": 14500,
+      "categories": 9,
+      "has_directory": true
+    },
+    {
+      "slug": "las-vegas",
+      "name": "Las Vegas, NV",
+      "status": "coming_soon"
+    },
+    {
+      "slug": "orlando",
+      "name": "Orlando, FL",
+      "status": "coming_soon"
+    },
+    {
+      "slug": "dallas",
+      "name": "Dallas, TX",
+      "status": "coming_soon"
+    },
+    {
+      "slug": "atlanta",
+      "name": "Atlanta, GA",
+      "status": "coming_soon"
+    }
+  ],
+
+  "buyouts": {
+    "single_city": {
+      "label": "Total City Buyout",
+      "price": 14500,
+      "exclusive": true,
+      "description": "Exclusive advertising across all pages within a single city market."
+    },
+    "multi_city": {
+      "enabled": true,
+      "example": "3 cities for approximately $40,000 / month",
+      "pricing_note": "Custom pricing based on city mix and availability."
+    }
+  },
+
+  "rofr": {
+    "enabled": true,
+    "description": "Active advertisers may request Right of First Refusal for future city launches."
+  }
+}
+
