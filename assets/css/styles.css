@@ -1,116 +1,48 @@
+/* styles.css — Final, production-ready (Audited + Extended) */
 
-/* styles.css — Final, production-ready */
+/* =========================
+   ROOT VARIABLES
+========================= */
 
 :root {
   --text: #1a1a1a;
   --muted: #666;
   --border: #e5e5e5;
   --accent: #0a66c2;
-  --bg-soft: #f9fafb;
+  --bg-soft: #f8f9fb;
+  --bg-panel: #ffffff;
 }
+
+/* =========================
+   BASE RESET
+========================= */
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  color: var(--text);
-  line-height: 1.6;
   margin: 0;
-  background: #ffffff;
-}
-
-main {
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 2rem 1.25rem;
-}
-
-h1, h2, h3 {
-  line-height: 1.3;
-}
-
-section {
-  margin-bottom: 3rem;
-}
-
-a {
-  color: var(--accent);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Listings */
-
-.listings-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 1.25rem;
-  margin-top: 1rem;
-}
-
-.listing-card {
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 1.25rem;
-  background: #fff;
-}
-
-.listing-card h3 {
-  font-size: 1.05rem;
-  margin: 0 0 0.5rem 0;
-}
-
-.listing-card a {
-  display: inline-block;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-}
-
-.listing-note {
-  font-size: 0.9rem;
-  color: var(--muted);
-}
-
-/* Sponsor blocks */
-
-.sponsor-banner {
-  border: 2px dashed var(--border);
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+  color: var(--text);
+  line-height: 1.7;
   background: var(--bg-soft);
-  padding: 1.75rem;
-  text-align: center;
-  border-radius: 10px;
-  margin: 2.5rem 0;
+  letter-spacing: 0.01em;
 }
 
-.sponsor-banner strong {
-  display: block;
-  margin-bottom: 0.25rem;
-}
-
-/* Footer / utility */
-
-.footer-note {
-  font-size: 0.85rem;
-  color: var(--muted);
-  border-top: 1px solid var(--border);
-  margin-top: 3rem;
-  padding-top: 1rem;
-}
-
-@media (max-width: 640px) {
-  main {
-    padding: 1.5rem 1rem;
-  }
-}
 /* =========================
-   Enterprise Layout Polish
+   LAYOUT
 ========================= */
 
+main,
 .content {
   max-width: 1100px;
   margin: 0 auto;
@@ -118,104 +50,27 @@ a:hover {
 }
 
 section {
+  background: var(--bg-panel);
+  padding: 2.25rem 2.5rem;
   margin-bottom: 3rem;
-}
-
-.page-intro .lede {
-  font-size: 1.15rem;
-  line-height: 1.6;
-  margin-top: 0.75rem;
-}
-
-.editorial-context,
-.city-categories,
-.directory {
-  padding: 1.75rem 2rem;
-  border: 1px solid #e5e7eb;
-  border-radius: 6px;
-  background: #fafafa;
-}
-
-.category-links li,
-.directory p {
-  margin-bottom: 0.75rem;
-}
-
-.site-nav a {
-  margin-right: 1.25rem;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.site-nav a:last-child {
-  opacity: 0.8;
-  font-weight: 400;
-}
-
-.listing-card {
-  padding: 1rem 1.25rem;
-  border-bottom: 1px solid #e5e7eb;
-}
-
-.listing-card:last-child {
-  border-bottom: none;
-}
-.global-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-}
-
-.primary-nav,
-.market-nav {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  margin: 0;
-  padding: 0;
-}
-
-.market-nav {
-  font-size: 0.9rem;
-  opacity: 0.85;
-}
-
-.market-label {
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-size: 0.75rem;
-  opacity: 0.7;
-}
-
-.brand {
-  font-weight: 700;
-  text-decoration: none;
-}
-/* =========================
-   ENTERPRISE REFINEMENT LAYER
-   (Non-regressive)
-========================= */
-
-/* Soft background to break white fatigue */
-body {
-  background: var(--bg-soft);
-}
-
-/* Elevate content panels subtly */
-section {
-  background: #ffffff;
-  padding: 2rem 2.25rem;
-  border-radius: 10px;
+  border-radius: 12px;
   border: 1px solid var(--border);
 }
 
-/* Improve reading hierarchy */
+/* =========================
+   TYPOGRAPHY
+========================= */
+
+h1,
+h2,
+h3 {
+  line-height: 1.3;
+}
+
 h1 {
   font-size: 2.15rem;
   font-weight: 700;
+  letter-spacing: -0.01em;
   margin-bottom: 1rem;
 }
 
@@ -225,114 +80,169 @@ h2 {
   margin-bottom: 0.75rem;
 }
 
-.lede {
+h3 {
   font-size: 1.1rem;
-  color: var(--muted);
-}
-
-/* Navigation polish (no layout changes) */
-.global-nav {
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 1.25rem 1.25rem;
-}
-
-.primary-nav a {
-  font-weight: 500;
-}
-
-.market-nav {
-  opacity: 0.75;
-}
-
-/* Sponsor banners stay compliant but cleaner */
-.sponsor-banner {
-  background: var(--bg-soft);
-}
-
-/* Paragraph rhythm */
-p {
-  margin-bottom: 1rem;
-}
-/* =========================
-   ENTERPRISE TYPOGRAPHY & RHYTHM REFINEMENT
-   (Safe, non-regressive)
-========================= */
-
-/* 1️⃣ FONT STACK — editorial but conservative */
-body {
-  font-family:
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Helvetica,
-    Arial,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    sans-serif;
-  letter-spacing: 0.01em;
-}
-
-/* 2️⃣ BACKGROUND — slightly warmer neutral */
-body {
-  background: #f8f9fb; /* warm off-white */
-}
-
-/* 3️⃣ SECTION SURFACE — cleaner separation */
-section {
-  background: #ffffff;
-  padding: 2.25rem 2.5rem;
-}
-
-/* 4️⃣ HEADING REFINEMENT — calmer hierarchy */
-h1 {
-  font-size: 2.1rem;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-}
-
-h2 {
-  font-size: 1.35rem;
   font-weight: 600;
-  margin-top: 0.25rem;
 }
 
-/* 5️⃣ BODY TEXT RHYTHM — easier scanning */
 p {
   margin-bottom: 1.15rem;
-  line-height: 1.7;
 }
 
-/* 6️⃣ LEDE — editorial emphasis without sales */
 .lede {
   font-size: 1.12rem;
   line-height: 1.75;
   color: var(--muted);
 }
 
-/* 7️⃣ LIST SPACING — reduce clutter */
+em {
+  color: var(--muted);
+}
+
+ul,
+ol {
+  padding-left: 1.25rem;
+}
+
 li {
   margin-bottom: 0.6rem;
 }
 
-/* 8️⃣ NAV REFINEMENT — slightly calmer */
+/* =========================
+   LINKS
+========================= */
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   GLOBAL NAVIGATION
+========================= */
+
+.global-nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.05rem;
+  text-decoration: none;
+}
+
+.primary-nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  margin: 0;
+  padding: 0;
+}
+
 .primary-nav a {
   font-weight: 500;
 }
 
-.market-label {
-  letter-spacing: 0.08em;
+/* =========================
+   HERO (HOME PAGE)
+========================= */
+
+.hero {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  padding: 0;
+  border: none;
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.92),
+      rgba(255, 255, 255, 0.92)
+    ),
+    url("/assets/images/hero-accident.jpg");
+  background-size: cover;
+  background-position: center;
 }
-/* Sponsor Stack */
+
+.hero-overlay {
+  padding: 4rem 3rem;
+}
+
+.hero h1 {
+  margin-top: 0;
+}
+
+.hero-subtext {
+  font-size: 1.15rem;
+  color: var(--muted);
+  max-width: 720px;
+}
+
+/* =========================
+   ACTION / LIST SECTIONS
+========================= */
+
+.action-list ul {
+  list-style: disc;
+}
+
+.cities ul {
+  list-style: disc;
+}
+
+.cities-note {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* =========================
+   LISTINGS
+========================= */
+
+.listings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.listing-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.25rem;
+}
+
+.listing-card h3 {
+  font-size: 1.05rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.listing-note {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* =========================
+   SPONSOR STACKS
+========================= */
 
 .sponsor-stack {
   margin: 3rem 0;
-  padding: 1.5rem;
+  padding: 1.75rem;
   background: #fafafa;
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 .sponsor-label {
@@ -344,9 +254,9 @@ li {
 }
 
 .sponsor-item {
-  padding: 1rem 1.25rem;
+  padding: 1.25rem;
   border: 1px dashed var(--border);
-  border-radius: 6px;
+  border-radius: 8px;
   background: #ffffff;
   margin-bottom: 1rem;
 }
@@ -360,6 +270,44 @@ li {
   margin-bottom: 0.25rem;
 }
 
-.sponsor-item a {
-  font-weight: 500;
+/* =========================
+   FOOTER
+========================= */
+
+.footer-note {
+  font-size: 0.85rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+  margin-top: 3rem;
+  padding-top: 1rem;
+}
+
+.footer-nav a {
+  margin-right: 1rem;
+  font-size: 0.9rem;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .hero-overlay {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  main,
+  .content {
+    padding: 1.5rem 1rem;
+  }
+
+  section {
+    padding: 1.75rem 1.5rem;
+  }
+
+  .primary-nav {
+    gap: 1rem;
+  }
 }
