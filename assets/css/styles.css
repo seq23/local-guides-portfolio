@@ -325,3 +325,41 @@ li {
 .market-label {
   letter-spacing: 0.08em;
 }
+/* Sponsor Stack */
+
+.sponsor-stack {
+  margin: 3rem 0;
+  padding: 1.5rem;
+  background: #fafafa;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.sponsor-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.sponsor-item {
+  padding: 1rem 1.25rem;
+  border: 1px dashed var(--border);
+  border-radius: 6px;
+  background: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.sponsor-item:last-child {
+  margin-bottom: 0;
+}
+
+.sponsor-item strong {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.sponsor-item a {
+  font-weight: 500;
+}
