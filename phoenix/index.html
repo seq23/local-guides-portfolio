@@ -30,7 +30,7 @@
 
 <main class="content">
 
-  <!-- SPONSOR STACK: PHOENIX INDEX TOP -->
+  <!-- CITYWIDE SPONSOR STACK (PRIMARY) -->
   <section
     class="sponsor-stack"
     data-sponsor-stack="phoenix-index-top"
@@ -39,42 +39,45 @@
     <div class="sponsor-items"></div>
   </section>
 
-  <!-- HERO / CITY CONTEXT -->
+  <!-- AUTHORITY INTRO -->
   <section class="page-intro">
     <h1>Phoenix Accident Resources</h1>
     <p class="lede">
-      This page provides educational information related to common accident
-      scenarios in Phoenix, Arizona, along with an informational directory of
-      law firms that publicly indicate they serve clients in this region.
+      This page serves as an educational resource for individuals researching
+      accident-related topics in Phoenix, Arizona. It provides general
+      information, navigation to in-depth guides, and access to a complete,
+      informational directory of law firms serving the Phoenix area.
     </p>
     <p>
-      The Accident Guides is an independent educational publisher. Content on
-      this site is provided for general informational purposes only and should
-      not be interpreted as legal or medical advice.
+      The Accident Guides is an independent educational publisher. All content
+      is provided for general informational purposes only and should not be
+      interpreted as legal or medical advice.
     </p>
   </section>
 
-  <!-- STRUCTURE EXPLANATION -->
+  <!-- HOW TO USE THIS PAGE -->
   <section class="editorial-context">
-    <h2>How This Page Is Organized</h2>
-    <p>Phoenix resources are presented in two layers:</p>
+    <h2>How This Phoenix Resource Is Organized</h2>
     <ul>
       <li>
-        <strong>Educational overviews</strong> explaining common accident types
+        <strong>Educational overviews</strong> covering common accident scenarios
         and research considerations.
       </li>
       <li>
+        <strong>City-specific navigation</strong> to guides and accident topics.
+      </li>
+      <li>
         <strong>An informational directory</strong> of law firms that publicly
-        state they handle accident-related matters in the Phoenix area.
+        indicate they serve clients in Phoenix.
       </li>
     </ul>
     <p>
-      Directory listings are not recommendations or endorsements. Advertising,
-      when present, is clearly labeled.
+      Advertising placements, when present, are clearly labeled. Directory
+      listings are not recommendations or endorsements.
     </p>
   </section>
 
-  <!-- CATEGORY NAVIGATION -->
+  <!-- CITY NAVIGATION -->
   <section class="city-categories">
     <h2>Phoenix Accident Topics</h2>
     <ul class="category-links">
@@ -90,21 +93,45 @@
     </ul>
   </section>
 
-  <!-- DIRECTORY -->
+  <!-- DIRECTORY (COLLAPSED APPENDIX) -->
   <section class="directory">
-    <h2>Law Firms Serving the Phoenix Area</h2>
+    <h2>Phoenix Law Firm Directory (Informational)</h2>
     <p>
-      The following directory includes law firms that publicly indicate they
-      serve clients in Phoenix, Arizona. Inclusion does not imply endorsement.
+      The directory below includes law firms that publicly indicate they serve
+      clients in Phoenix, Arizona. Inclusion is based on publicly available
+      information and does not imply qualification, specialization, or
+      endorsement.
     </p>
 
-    <div id="verified-listings"></div>
-    <div id="other-listings"></div>
+    <button
+      type="button"
+      class="directory-toggle"
+      aria-expanded="false"
+      aria-controls="phoenix-directory"
+      onclick="toggleDirectory()"
+    >
+      View all firms
+    </button>
 
-    <p class="listing-disclaimer">
-      Directory listings are provided for informational purposes only.
-      Advertising placements, when present, are clearly labeled.
-    </p>
+    <!-- SECOND CITYWIDE SPONSOR TOUCHPOINT -->
+    <section
+      class="sponsor-stack"
+      data-sponsor-stack="phoenix-index-bottom"
+    >
+      <h3 class="sponsor-label">Advertising</h3>
+      <div class="sponsor-items"></div>
+    </section>
+
+    <div id="phoenix-directory" hidden>
+      <div id="verified-listings"></div>
+      <div id="other-listings"></div>
+
+      <p class="listing-disclaimer">
+        Directory listings are provided for informational purposes only.
+        Advertising placements, when present, are clearly labeled.
+        No guarantees or outcomes are stated or implied.
+      </p>
+    </div>
   </section>
 
 </main>
@@ -117,5 +144,18 @@
 </footer>
 
 <script src="/assets/js/scripts.js"></script>
+
+<script>
+  function toggleDirectory() {
+    const btn = document.querySelector(".directory-toggle");
+    const dir = document.getElementById("phoenix-directory");
+    const expanded = btn.getAttribute("aria-expanded") === "true";
+
+    btn.setAttribute("aria-expanded", String(!expanded));
+    btn.textContent = expanded ? "View all firms" : "Hide firm list";
+    dir.hidden = expanded;
+  }
+</script>
+
 </body>
 </html>
