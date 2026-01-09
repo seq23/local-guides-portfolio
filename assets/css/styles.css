@@ -345,3 +345,8 @@ button[type="submit"] {
   font-size: 0.95rem;
   font-weight: 600;
 }
+.form-note {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
