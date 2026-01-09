@@ -162,3 +162,32 @@ function injectHotlinkImages(images) {
     if (img) img.src = images[key];
   });
 }
+/* -----------------------------
+   SPONSOR STACK LOADER
+----------------------------- */
+
+fetch("/data/phoenix_sponsors.json")
+  .then(res => res.json())
+  .then(data => {
+    document.querySelectorAll("[data-sponsor-stack]").forEach(stack => {
+      const key = stack.dataset.sponsorStack;
+      const items = data[key];
+      if (!items || !items.length) return;
+
+      const container = stack.querySelector(".sponsor-items");
+
+      items.forEach(s => {
+        const div = document.createElement("div");
+        div.className = "sponsor-item";
+        div.innerHTML = `
+          <strong>${s.name}</strong>
+          <a href="${s.url}" target="_blank" rel="noopener noreferrer">
+            Visit sponsor website
+          </a>
+          <p class="listing-note">${s.label || "Advertising"}</p>
+        `;
+        container.appendChild(div);
+      });
+    });
+  })
+  .catch(err => console.error("Sponsor load failed:", err));
