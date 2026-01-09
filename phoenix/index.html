@@ -11,14 +11,33 @@
 <body data-city="phoenix">
 
 <header>
-  <nav class="site-nav">
-    <a href="/">The Accident Guides</a>
-    <a href="/guides/">Guides</a>
-    <a href="/phoenix/">Phoenix</a>
+  <nav class="global-nav">
+    <a href="/" class="brand">The Accident Guides</a>
+
+    <ul class="primary-nav">
+      <li><a href="/guides/">Guides</a></li>
+      <li><a href="/for-firms/">For Firms</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
+
+    <ul class="market-nav">
+      <li class="market-label">Markets</li>
+      <li><a href="/phoenix/">Phoenix, AZ</a></li>
+    </ul>
   </nav>
 </header>
 
 <main class="content">
+
+  <!-- SPONSOR STACK: PHOENIX INDEX TOP -->
+  <section
+    class="sponsor-stack"
+    data-sponsor-stack="phoenix-index-top"
+  >
+    <h3 class="sponsor-label">Advertising</h3>
+    <div class="sponsor-items"></div>
+  </section>
 
   <!-- HERO / CITY CONTEXT -->
   <section class="page-intro">
@@ -38,9 +57,7 @@
   <!-- STRUCTURE EXPLANATION -->
   <section class="editorial-context">
     <h2>How This Page Is Organized</h2>
-    <p>
-      Phoenix resources are presented in two layers:
-    </p>
+    <p>Phoenix resources are presented in two layers:</p>
     <ul>
       <li>
         <strong>Educational overviews</strong> explaining common accident types
@@ -73,47 +90,30 @@
     </ul>
   </section>
 
-  <!-- CANONICAL DIRECTORY -->
+  <!-- DIRECTORY -->
   <section class="directory">
     <h2>Law Firms Serving the Phoenix Area</h2>
     <p>
       The following directory includes law firms that publicly indicate they
-      serve clients in Phoenix, Arizona. Inclusion is based on publicly
-      available information and does not imply endorsement, qualification,
-      or specialization.
+      serve clients in Phoenix, Arizona. Inclusion does not imply endorsement.
     </p>
 
-    <!-- ALL FIRMS RENDER HERE -->
     <div id="verified-listings"></div>
     <div id="other-listings"></div>
 
     <p class="listing-disclaimer">
       Directory listings are provided for informational purposes only.
       Advertising placements, when present, are clearly labeled.
-      No guarantees or outcomes are stated or implied.
-    </p>
-  </section>
-
-  <!-- CROSS-REFERENCE -->
-  <section class="cross-links">
-    <p>
-      For general, non–location-specific educational content, visit the
-      <a href="/guides/">Accident & Injury Guides</a>.
     </p>
   </section>
 
 </main>
 
 <footer>
-  <p>
+  <p class="footer-note">
     Educational content only. No legal advice. No medical advice.
     No guarantees or endorsements.
   </p>
-  <nav class="footer-nav">
-    <a href="/disclaimer/">Disclaimer</a>
-    <a href="/editorial-policy/">Editorial Policy</a>
-    <a href="/privacy/">Privacy</a>
-  </nav>
 </footer>
 
 <script src="/assets/js/scripts.js"></script>
