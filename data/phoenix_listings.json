@@ -7,753 +7,907 @@ SCHEMA LOCK:
 */
 [
   {
-    "firm": "Patrick Mason Dennis",
-    "url": "https://offshoreinjurytrialattorney.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.justia.com/lawyers/personal-injury/arizona/phoenix"
-  },
-  {
-    "firm": "Sean Woods (Mills and Woods Law)",
-    "url": "https://lawbadgers.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.justia.com/lawyers/personal-injury/arizona/phoenix"
-  },
-  {
-    "firm": "Weston Montrose (Arizona Injury Law Group)",
-    "url": "https://azworkcomplaw.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.justia.com/lawyers/personal-injury/arizona/phoenix"
-  },
-  {
-    "firm": "Marc Lamber",
-    "url": "https://lambergoodnow.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.justia.com/lawyers/personal-injury/arizona/phoenix"
-  },
-  {
-    "firm": "Ayensa Millan (CIMA Law Group)",
-    "url": "https://cimalawgroup.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.justia.com/lawyers/personal-injury/arizona/phoenix"
-  },
-  {
-    "firm": "Bernard Rethore",
-    "url": "https://p-rlaw.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.justia.com/lawyers/personal-injury/arizona/phoenix"
-  },
-  {
-    "firm": "Michael Patrick Doyle",
-    "url": "https://doylelawfirm.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.justia.com/lawyers/personal-injury/arizona/phoenix"
-  },
-  {
-    "firm": "Fabian Zazueta (Zazueta Law)",
-    "url": "https://zazuetalawfirm.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.justia.com/lawyers/personal-injury/arizona/phoenix"
-  },
-  {
-    "firm": "Alison C. Briggs (My Arizona Lawyers)",
-    "url": "https://myazlawyers.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.justia.com/lawyers/personal-injury/arizona/phoenix"
-  },
-  {
-    "firm": "Benjamin Wright",
-    "url": "https://azbklawyer.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.justia.com/lawyers/personal-injury/arizona/phoenix"
-  },
-  {
-    "firm": "Randal Hutson (Hutson Law Firm)",
-    "url": "https://lawhutson.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.justia.com/lawyers/personal-injury/arizona/phoenix"
-  },
-  {
-    "firm": "Richard Suzuki",
-    "url": "https://suzukilawoffices.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.justia.com/lawyers/personal-injury/arizona/phoenix"
-  },
-  {
-    "firm": "Jess A. Lorona (Lorona Mead)",
-    "url": "https://loronamead.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.justia.com/lawyers/personal-injury/arizona/phoenix"
-  },
-  {
-    "firm": "Anthony Clark",
-    "url": "https://answersaboutbankruptcy.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.justia.com/lawyers/personal-injury/arizona/phoenix"
-  },
-  {
-    "firm": "Adam Studnicki",
-    "url": "https://studnickilaw.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.justia.com/lawyers/personal-injury/arizona/phoenix"
-  },
-  {
-    "firm": "Joseph D\u2019Aguanno (Gage Mathers Law Group)",
-    "url": "https://gagemathers.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.justia.com/lawyers/personal-injury/arizona/phoenix"
-  },
-  {
-    "firm": "Michael Stephen Pittman (Your Arizona Lawyer)",
-    "url": "https://yourarizonalawyer.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.justia.com/lawyers/personal-injury/arizona/phoenix"
-  },
-  {
-    "firm": "Omer Ramiro Gurion",
-    "url": "https://gurionlegal.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.justia.com/lawyers/personal-injury/arizona/phoenix"
-  },
-  {
-    "firm": "Richard C. Gramlich",
-    "url": "https://tblaw.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.justia.com/lawyers/personal-injury/arizona/phoenix"
-  },
-  {
-    "firm": "Jack Hirsch (Hirsch and Lyon Accident Law)",
-    "url": "https://hirschandlyonaccidentlaw.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.justia.com/lawyers/personal-injury/arizona/phoenix"
-  },
-  {
-    "firm": "Kevin Michael Rowe (Lerner and Rowe)",
-    "url": "https://lernerandrowe.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.justia.com/lawyers/personal-injury/arizona/phoenix"
-  },
-  {
-    "firm": "Jennifer Rebholz",
-    "url": "https://zwfirm.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.justia.com/lawyers/personal-injury/arizona/phoenix"
-  },
-  {
-    "firm": "Michael Zoldan (Zoldan Law Group)",
-    "url": "https://zoldangroup.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.justia.com/lawyers/personal-injury/arizona/phoenix"
-  },
-  {
-    "firm": "Mick Levin, P.L.C.",
-    "url": "https://mlplc.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.justia.com/lawyers/personal-injury/arizona/phoenix"
-  },
-  {
-    "firm": "Gary Phillips Accident Law Professionals",
-    "url": "https://garyphillipsaccidentlaw.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.justia.com/lawyers/personal-injury/arizona/phoenix"
-  },
-  {
-    "firm": "Law Offices of William D. Black",
-    "url": "https://billblacklawfirm.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.justia.com/lawyers/personal-injury/arizona/phoenix"
-  },
-  {
-    "firm": "Runion Injury Law",
-    "url": "https://runioninjurylaw.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.justia.com/lawyers/personal-injury/arizona/phoenix"
-  },
-  {
-    "firm": "Genesis Legal Group",
-    "url": "https://genesislegalgroup.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://lawyers.findlaw.com/personal-injury-plaintiff/arizona/phoenix/"
-  },
-  {
-    "firm": "Wade & Nysather AZ Accident Attorneys",
-    "url": "https://wadenysather.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://lawyers.findlaw.com/personal-injury-plaintiff/arizona/phoenix/"
-  },
-  {
-    "firm": "Law Offices of Shane L. Harward, P.L.C.",
-    "url": "https://azlegalcenter.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://lawyers.findlaw.com/personal-injury-plaintiff/arizona/phoenix/?page=3"
-  },
-  {
-    "firm": "Allen Law Firm \u2013 Arizona\u2019s Big Crash Lawyers",
-    "url": "https://goodazlawyers.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://lawyers.findlaw.com/personal-injury-plaintiff/arizona/phoenix/?page=3"
-  },
-  {
-    "firm": "Michael J. Shew Ltd.",
-    "url": "https://michaelshew.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://lawyers.findlaw.com/personal-injury-plaintiff/arizona/phoenix/?page=3"
-  },
-  {
-    "firm": "Yearin Law Office",
-    "url": "https://www.yearinlaw.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=1"
-  },
-  {
-    "firm": "AFI Law Group PLLC",
-    "url": "https://www.afi-law.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=1"
-  },
-  {
-    "firm": "St. Jean and Price, PLC",
-    "url": "https://www.sgplaw.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=1"
-  },
-  {
-    "firm": "Law Offices of Jeffery S. Bloom",
-    "url": "https://www.bloomlawaz.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=1"
-  },
-  {
-    "firm": "Robinson & Henry, P.C.",
-    "url": "https://www.robinsonandhenry.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=1"
-  },
-  {
-    "firm": "Guerra & Casillas, PLLC",
-    "url": "https://www.lpguerra.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=1"
-  },
-  {
-    "firm": "The Rivera Law Firm",
-    "url": "https://www.caraccidentlawyerinaz.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=1"
-  },
-  {
-    "firm": "The Law Office of Julia Martin, Inc.",
-    "url": "https://www.juliamartinlaw.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=1"
-  },
-  {
-    "firm": "Kelly Law Team",
-    "url": "https://www.jkphoenixpersonalinjuryattorney.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=1"
-  },
-  {
-    "firm": "The Husband & Wife Law Team",
-    "url": "https://www.breyerlaw.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=1"
-  },
-  {
-    "firm": "Shapiro Injury Law",
-    "url": "https://www.shappylaw.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=1"
-  },
-  {
-    "firm": "Law Office of David A. Black",
-    "url": "https://www.blackwynn.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=1"
-  },
-  {
-    "firm": "Law Office of Claudia P. Lopez",
-    "url": "https://www.lopezazlaw.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=1"
-  },
-  {
-    "firm": "The Schreck Law Firm",
-    "url": "https://www.schrecklawfirm.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=1"
-  },
-  {
-    "firm": "Law Offices of Kevin L. Beckwith, P.C.",
-    "url": "https://www.kevinbeckwithlaw.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=1"
-  },
-  {
-    "firm": "Guy W. Bluff",
-    "url": "https://www.guywbluff.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=1"
-  },
-  {
-    "firm": "Glazer Hammond Glazer, PLC",
-    "url": "https://www.ghg.law",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=2"
-  },
-  {
-    "firm": "The Law Offices of Kamille Dean",
-    "url": "https://www.kdeanlaw.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=2"
-  },
-  {
-    "firm": "The Edward Smith Law Firm",
-    "url": "https://www.esquirelaw.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=2"
-  },
-  {
-    "firm": "J. Ryan Talamante and Associates",
-    "url": "https://www.jryantalamante.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=2"
-  },
-  {
-    "firm": "National Injury Attorneys, LLC",
-    "url": "https://www.callnational.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=3"
-  },
-  {
-    "firm": "Schleier Law Offices, P.C.",
-    "url": "https://www.schleierlaw.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=3"
-  },
-  {
-    "firm": "Flemming Law Firm, P.C.",
-    "url": "https://www.theflemminglawfirm.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=3"
-  },
-  {
-    "firm": "Rutkin Legal, LLC",
-    "url": "https://www.rutkinlaw.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=3"
-  },
-  {
-    "firm": "Long & Simmons Law",
-    "url": "https://www.longandsimmonslaw.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=3"
-  },
-  {
-    "firm": "Lemez, Alvarez & Wallace, P.L.L.C.",
-    "url": "https://www.lemezlaw.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=3"
-  },
-  {
-    "firm": "Schmitt Schneck Even & Williams",
-    "url": "https://www.azbarristers.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=3"
-  },
-  {
-    "firm": "Goodnow McKay Injury Lawyers",
-    "url": "https://www.goodnowmckay.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=4"
-  },
-  {
-    "firm": "Van Cott & Talamante, PLLC",
-    "url": "https://www.vancotttalamante.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=4"
-  },
-  {
-    "firm": "Miller Kory Rowe LLP",
-    "url": "https://www.mkrfirm.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=4"
-  },
-  {
-    "firm": "Larry H. Parker",
-    "url": "https://www.larryhparker.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=4"
-  },
-  {
-    "firm": "Welker & Pauole PLC",
-    "url": "https://www.wwpfirm.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=4"
-  },
-  {
-    "firm": "Garcia, Artigliere & Medby",
-    "url": "https://www.lawgarcia.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=4"
-  },
-  {
-    "firm": "Hoffman Legal",
-    "url": "https://www.hoffmanlegalaz.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=4"
-  },
-  {
-    "firm": "Schneider & Onofry, P.C.",
-    "url": "https://www.soarizonalaw.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=4"
-  },
-  {
-    "firm": "Ramos Law",
-    "url": "https://www.ramoslaw.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=4"
-  },
-  {
-    "firm": "Thomas Law, PLLC",
-    "url": "https://thomaslawaz.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=4"
-  },
-  {
-    "firm": "Knapp & Roberts, P.C.",
-    "url": "https://www.krattorneys.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=4"
-  },
-  {
-    "firm": "Taft Law",
-    "url": "https://www.taftlaw.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=4"
-  },
-  {
-    "firm": "Plattner Verderame, P.C.",
-    "url": "https://plattner-verderame.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=5"
-  },
-  {
-    "firm": "Israel & Gerity, PLLC",
-    "url": "https://www.ig-law.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=5"
-  },
-  {
-    "firm": "Goldwater Law Firm",
-    "url": "https://goldwaterlawfirm.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=5"
-  },
-  {
-    "firm": "Stone Rose Law",
-    "url": "https://www.stoneroselaw.com",
-    "categories": {
-      "car": false,
-      "truck": false,
-      "slip_fall": false
-    },
-    "source": "https://www.lawyers.com/personal-injury/phoenix/arizona/law-firms/?page=5"
+    "id": "phx-001",
+    "name": "Patrick Mason Dennis",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-002",
+    "name": "Sean Woods (Mills and Woods Law)",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-003",
+    "name": "Lerner and Rowe Injury Attorneys",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-004",
+    "name": "Phillips Law Group",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-005",
+    "name": "Goldberg and Osborne",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-006",
+    "name": "Zanes Law Injury Lawyers",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-007",
+    "name": "The Husband and Wife Law Team",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-008",
+    "name": "Krause Law Group",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-009",
+    "name": "Hall Law Group",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-010",
+    "name": "Rafi Law Group",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-011",
+    "name": "Breyer Law Offices",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-012",
+    "name": "Accident Law Group",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-013",
+    "name": "Harris and Associates",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-014",
+    "name": "The Law Offices of John Phebus",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-015",
+    "name": "Salerno and Associates",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  }
+  ,
+  {
+    "id": "phx-016",
+    "name": "Smith & Green Law",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-017",
+    "name": "Warnock MacKinlay Law",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-018",
+    "name": "Keller Rohrback LLP",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-019",
+    "name": "The Law Office of Kyle Sherman",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-020",
+    "name": "Fendon Law Firm",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-021",
+    "name": "Jackson White Law",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-022",
+    "name": "Shapiro Law Team",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-023",
+    "name": "Osborn Maledon PA",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-024",
+    "name": "Burg Simpson Eldredge Hersh & Jardine",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-025",
+    "name": "Rosenstein Law Group",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-026",
+    "name": "Gordon Rees Scully Mansukhani",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-027",
+    "name": "Jones Skelton & Hochuli",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-028",
+    "name": "Snell & Wilmer",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-029",
+    "name": "Gallagher & Kennedy",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-030",
+    "name": "Coppersmith Brockelman PLC",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  }
+  ,
+  {
+    "id": "phx-031",
+    "name": "Quinn Law Group",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-032",
+    "name": "Weiss Brown",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-033",
+    "name": "Tully Bailey",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-034",
+    "name": "Grasso Law Firm",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-035",
+    "name": "Taylor Law Group",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-036",
+    "name": "Wilshire Law Firm",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-037",
+    "name": "The Law Office of James E. Novak",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-038",
+    "name": "The Bradshaw Firm",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-039",
+    "name": "MayesTelles PLLC",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-040",
+    "name": "Beltran Law Group",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-041",
+    "name": "Hollingsworth Kelly",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-042",
+    "name": "The Law Offices of David A. Black",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-043",
+    "name": "Bache Lynch Goldsmith & Mendoza",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-044",
+    "name": "Cohen and Cohen Law",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-045",
+    "name": "The Law Offices of Kevin Jensen",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  }
+  ,
+  {
+    "id": "phx-046",
+    "name": "Linton Law Group",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-047",
+    "name": "Ahwatukee Legal Office",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-048",
+    "name": "The Law Office of David Shapiro",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-049",
+    "name": "Harris Personal Injury Lawyers",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-050",
+    "name": "Ramirez Law Group",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-051",
+    "name": "Jaburg Wilk",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-052",
+    "name": "The Law Offices of Timothy C. Ryan",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-053",
+    "name": "Osborn Maledon PA (Litigation)",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-054",
+    "name": "Lerner and Rowe (Scottsdale Office)",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-055",
+    "name": "Zinda Law Group",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-056",
+    "name": "Cohen & Malad LLP",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-057",
+    "name": "The Law Office of William D. Black",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-058",
+    "name": "Sargon Law Group",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-059",
+    "name": "Ramos Law",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-060",
+    "name": "Dixon Injury Law",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  }
+  ,
+  {
+    "id": "phx-061",
+    "name": "Gerber Injury Law",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-062",
+    "name": "The Law Office of Richard L. Testa",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-063",
+    "name": "Cohen Injury Law Group",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-064",
+    "name": "Gainsberg Injury Law",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-065",
+    "name": "Arizona Injury Law Group",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-066",
+    "name": "The Law Offices of Michael Cordova",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-067",
+    "name": "Law Offices of Daniel Hutto",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-068",
+    "name": "Goldwater Law Firm",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-069",
+    "name": "The Law Offices of Steven M. Brown",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-070",
+    "name": "Arizona Accident Law Group",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-071",
+    "name": "The Law Offices of David L. Abney",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-072",
+    "name": "The Law Office of Robert J. Hommel",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-073",
+    "name": "Gonzales Law Offices",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-074",
+    "name": "The Law Office of Raymond K. Gibeaut",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "phx-075",
+    "name": "Stone Rose Law",
+    "city": "Phoenix",
+    "state": "AZ",
+    "practice_areas": [],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
   }
 ]
