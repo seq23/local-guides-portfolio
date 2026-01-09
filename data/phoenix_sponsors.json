@@ -1,0 +1,35 @@
+{
+  "phoenix-index-top": [
+    {
+      "name": "Example Firm A",
+      "url": "https://example.com",
+      "label": "Citywide Sponsor"
+    }
+  ],
+
+  "phoenix-car-accidents-top": [
+    {
+      "name": "Car Accident Sponsor",
+      "url": "https://example.com",
+      "label": "Category Sponsor"
+    }
+  ],
+
+  "phoenix-car-accidents-mid": [],
+  "phoenix-car-accidents-bottom": [],
+
+  "phoenix-guides": [
+    {
+      "name": "Firm Alpha",
+      "url": "https://example.com",
+      "label": "Sponsored"
+    },
+    {
+      "name": "Firm Beta",
+      "url": "https://example.com",
+      "label": "Sponsored"
+    }
+  ],
+
+  "phoenix-faq": []
+}
