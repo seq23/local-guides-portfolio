@@ -182,25 +182,32 @@
   <h2>Advertising Inquiry</h2>
 
   <p class="lede">
-    Submit an inquiry to check availability or discuss sponsorship options. You may also email us at <a href="mailto:info@spryvc.com?subject=Advertising%20Inquiry">
-  info@spryvc.com
-</a>
-
+    Submit an inquiry to check availability or discuss sponsorship options.
+    You may also contact us directly at
+    <a href="mailto:info@spryvc.com?subject=Advertising%20Inquiry">
+      info@spryvc.com
+    </a>.
   </p>
 
-  <div id="form-success" style="display:none;">
-    <p class="lede"><strong>Thank you.</strong> Your inquiry has been received.</p>
-    <p>We’ll follow up if availability aligns.</p>
-  </div>
+  <p class="form-note">
+    <em>
+      Submitting this form will open your email client with the details pre-filled.
+      No information is stored on this website.
+    </em>
+  </p>
 
-  <form id="advertising-form">
+  <form
+    action="mailto:info@spryvc.com?subject=Advertising%20Inquiry%20–%20The%20Accident%20Guides"
+    method="post"
+    enctype="text/plain"
+  >
 
     <div class="form-row">
       <label>
         Full Name
         <span class="form-hint">Primary point of contact</span>
       </label>
-      <input type="text" name="name" required />
+      <input type="text" name="Name" required />
     </div>
 
     <div class="form-row">
@@ -208,7 +215,7 @@
         Email Address
         <span class="form-hint">We respond personally</span>
       </label>
-      <input type="email" name="email" required />
+      <input type="email" name="Email" required />
     </div>
 
     <div class="form-row">
@@ -216,7 +223,7 @@
         Estimated Monthly Budget
         <span class="form-hint">Helps us recommend the right placement</span>
       </label>
-      <select name="budget" required>
+      <select name="Estimated Budget" required>
         <option value="">Select a range</option>
         <option>$500 – $1,000</option>
         <option>$1,000 – $2,500</option>
@@ -230,10 +237,10 @@
         Notes (optional)
         <span class="form-hint">Markets, categories, or questions</span>
       </label>
-      <textarea name="notes" rows="4"></textarea>
+      <textarea name="Notes" rows="4"></textarea>
     </div>
 
-    <button type="submit">Submit Inquiry</button>
+    <button type="submit">Open Email to Submit</button>
 
   </form>
 </section>
