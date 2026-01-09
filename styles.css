@@ -1,0 +1,109 @@
+
+/* styles.css — Final, production-ready */
+
+:root {
+  --text: #1a1a1a;
+  --muted: #666;
+  --border: #e5e5e5;
+  --accent: #0a66c2;
+  --bg-soft: #f9fafb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+  margin: 0;
+  background: #ffffff;
+}
+
+main {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+}
+
+h1, h2, h3 {
+  line-height: 1.3;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Listings */
+
+.listings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.listing-card {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.25rem;
+  background: #fff;
+}
+
+.listing-card h3 {
+  font-size: 1.05rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.listing-card a {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.listing-note {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* Sponsor blocks */
+
+.sponsor-banner {
+  border: 2px dashed var(--border);
+  background: var(--bg-soft);
+  padding: 1.75rem;
+  text-align: center;
+  border-radius: 10px;
+  margin: 2.5rem 0;
+}
+
+.sponsor-banner strong {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+/* Footer / utility */
+
+.footer-note {
+  font-size: 0.85rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+  margin-top: 3rem;
+  padding-top: 1rem;
+}
+
+@media (max-width: 640px) {
+  main {
+    padding: 1.5rem 1rem;
+  }
+}
