@@ -194,3 +194,63 @@ section {
   font-weight: 700;
   text-decoration: none;
 }
+/* =========================
+   ENTERPRISE REFINEMENT LAYER
+   (Non-regressive)
+========================= */
+
+/* Soft background to break white fatigue */
+body {
+  background: var(--bg-soft);
+}
+
+/* Elevate content panels subtly */
+section {
+  background: #ffffff;
+  padding: 2rem 2.25rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+/* Improve reading hierarchy */
+h1 {
+  font-size: 2.15rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.lede {
+  font-size: 1.1rem;
+  color: var(--muted);
+}
+
+/* Navigation polish (no layout changes) */
+.global-nav {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 1.25rem 1.25rem;
+}
+
+.primary-nav a {
+  font-weight: 500;
+}
+
+.market-nav {
+  opacity: 0.75;
+}
+
+/* Sponsor banners stay compliant but cleaner */
+.sponsor-banner {
+  background: var(--bg-soft);
+}
+
+/* Paragraph rhythm */
+p {
+  margin-bottom: 1rem;
+}
