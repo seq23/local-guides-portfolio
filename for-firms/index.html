@@ -125,8 +125,8 @@
   <h2>Advertising Inquiry</h2>
 
   <p class="lede">
-    Submit an inquiry to check availability or discuss sponsorship options.
-    Our team reviews all submissions directly.
+    Use this form to inquire about sponsorship availability or pricing.
+    Submissions are reviewed directly by our team.
   </p>
 
   <div id="form-success" style="display:none;">
@@ -134,59 +134,49 @@
     <p>We’ll follow up if availability aligns.</p>
   </div>
 
-  <form id="advertising-form" enctype="multipart/form-data">
+  <form id="advertising-form">
 
-    <fieldset>
-      <legend><strong>Contact Information</strong></legend>
-
-      <label>Full Name<br />
-        <input type="text" name="name" required />
+    <!-- Name -->
+    <div class="form-row">
+      <label for="name">
+        Full Name
+        <span class="form-hint">Primary point of contact</span>
       </label>
+      <input id="name" type="text" name="name" required />
+    </div>
 
-      <label>Email Address<br />
-        <input type="email" name="email" required />
+    <!-- Email -->
+    <div class="form-row">
+      <label for="email">
+        Email Address
+        <span class="form-hint">We respond personally</span>
       </label>
+      <input id="email" type="email" name="email" required />
+    </div>
 
-      <label>Firm Name<br />
-        <input type="text" name="firm_name" required />
+    <!-- Budget -->
+    <div class="form-row">
+      <label for="budget">
+        Estimated Monthly Budget
+        <span class="form-hint">Helps us recommend the right placement</span>
       </label>
+      <select id="budget" name="budget" required>
+        <option value="">Select a range</option>
+        <option>$500 – $1,000</option>
+        <option>$1,000 – $2,500</option>
+        <option>$2,500 – $5,000</option>
+        <option>$5,000+</option>
+      </select>
+    </div>
 
-      <label>Website (optional)<br />
-        <input type="url" name="website" placeholder="https://example.com" />
+    <!-- Notes -->
+    <div class="form-row">
+      <label for="notes">
+        Notes (optional)
+        <span class="form-hint">Markets, categories, or questions</span>
       </label>
-    </fieldset>
-
-    <fieldset>
-      <legend><strong>Sponsorship Interest</strong></legend>
-
-      <label>Market(s) of Interest<br />
-        <select name="market" required>
-          <option value="">Select</option>
-          <option>Phoenix, AZ</option>
-          <option>Las Vegas, NV</option>
-          <option>Orlando, FL</option>
-          <option>Dallas, TX</option>
-          <option>Atlanta, GA</option>
-          <option>Multiple / National</option>
-        </select>
-      </label>
-
-      <label>Package Type<br />
-        <select name="package" required>
-          <option value="">Select</option>
-          <option>Citywide Authority</option>
-          <option>Category Ownership</option>
-          <option>Editorial Presence</option>
-          <option>Total City Buyout</option>
-          <option>Entire Website Buyout</option>
-        </select>
-      </label>
-    </fieldset>
-
-    <fieldset>
-      <legend><strong>Notes</strong></legend>
-      <textarea name="notes" rows="4"></textarea>
-    </fieldset>
+      <textarea id="notes" name="notes" rows="4"></textarea>
+    </div>
 
     <button type="submit">Submit Inquiry</button>
 
