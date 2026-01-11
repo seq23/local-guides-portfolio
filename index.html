@@ -166,6 +166,9 @@
     }
 
     async function renderCities() {
+      // Always use a neutral note (no counters)
+      if (noteEl) noteEl.textContent = "Cities are linked when live and available.";
+
       try {
         const res = await fetch("/data/cities.json", { cache: "no-store" });
         if (!res.ok) throw new Error("Failed to load /data/cities.json");
@@ -182,7 +185,6 @@
 
         // Build list: only link if the folder actually exists.
         const items = [];
-        let linkedCount = 0;
 
         for (const c of cities) {
           const slug = (c.slug || "").trim();
@@ -194,8 +196,6 @@
 
           const isConfiguredLive = (c.status || "") === "live";
           const label = exists ? "Live" : (isConfiguredLive ? "Launching" : "Coming soon");
-
-          if (exists) linkedCount++;
 
           const safeName = escapeHtml(name);
           const safeLabel = escapeHtml(label);
@@ -210,12 +210,6 @@
         // Replace the fallback list only if we successfully rendered items
         if (items.length) {
           listEl.innerHTML = items.join("\n");
-        }
-
-        if (noteEl) {
-          noteEl.textContent = linkedCount > 0
-            ? `${linkedCount} city${linkedCount === 1 ? "" : "ies"} currently live and clickable.`
-            : "Cities are linked when live and available.";
         }
       } catch (err) {
         // Keep fallback list; don’t break the page.
