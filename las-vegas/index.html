@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Las Vegas Accident Resources & Law Firm Directory | The Accident Guides</title>
+  <meta name="description" content="Educational accident resources and an informational directory of law firms serving Las Vegas, Nevada. No legal or medical advice. No endorsements." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+
+<body data-city="las-vegas">
+
+<header>
+  <nav class="global-nav">
+    <a href="/" class="brand">The Accident Guides</a>
+
+    <ul class="primary-nav">
+      <li><a href="/guides/">Guides</a></li>
+      <li><a href="/for-firms/">For Firms</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
+
+    <ul class="market-nav">
+      <li class="market-label">Markets</li>
+      <li><a href="/phoenix/">Phoenix, AZ</a></li>
+      <li><a href="/las-vegas/">Las Vegas, NV</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+  <section class="sponsor-stack" data-sponsor-stack="las-vegas-index-top">
+    <h3 class="sponsor-label">Advertising</h3>
+    <div class="sponsor-items"></div>
+  </section>
+
+  <section class="page-intro">
+    <h1>Las Vegas Accident Resources</h1>
+    <p class="lede">
+      This page serves as an educational resource for individuals researching
+      accident-related topics in Las Vegas, Nevada. It provides general
+      information, navigation to in-depth guides, and access to a complete,
+      informational directory of law firms serving the Las Vegas area.
+    </p>
+    <p>
+      The Accident Guides is an independent educational publisher. All content
+      is provided for general informational purposes only and should not be
+      interpreted as legal or medical advice.
+    </p>
+  </section>
+
+  <section class="editorial-context">
+    <h2>How This Las Vegas Resource Is Organized</h2>
+    <ul>
+      <li><strong>Educational overviews</strong> covering common accident scenarios and research considerations.</li>
+      <li><strong>City-specific navigation</strong> to accident topics and local decision-support pages.</li>
+      <li><strong>An informational directory</strong> of law firms that publicly indicate they serve clients in Las Vegas.</li>
+    </ul>
+    <p>
+      Advertising placements, when present, are clearly labeled. Directory listings are not recommendations or endorsements.
+    </p>
+  </section>
+
+  <section class="city-categories">
+    <h2>Las Vegas Accident Topics</h2>
+    <ul class="category-links">
+      <li><a href="/las-vegas/car-accidents/">Car Accidents</a></li>
+      <li><a href="/las-vegas/truck-accidents/">Truck Accidents</a></li>
+      <li><a href="/las-vegas/motorcycle-accidents/">Motorcycle Accidents</a></li>
+      <li><a href="/las-vegas/bicycle-accidents/">Bicycle Accidents</a></li>
+      <li><a href="/las-vegas/pedestrian-accidents/">Pedestrian Accidents</a></li>
+      <li><a href="/las-vegas/rideshare-accidents/">Rideshare Accidents</a></li>
+      <li><a href="/las-vegas/slip-and-fall/">Slip and Fall Accidents</a></li>
+      <li><a href="/las-vegas/construction-accidents/">Construction Accidents</a></li>
+      <li><a href="/las-vegas/wrongful-death/">Wrongful Death</a></li>
+    </ul>
+  </section>
+
+  <section class="city-categories">
+    <h2>Las Vegas Decision-Support Pages</h2>
+    <ul class="category-links">
+      <li><a href="/las-vegas/evidence-checklist/">Evidence Checklist</a></li>
+      <li><a href="/las-vegas/nevada-injury-claim-timeline/">Nevada Injury Claim Timeline</a></li>
+      <li><a href="/las-vegas/when-to-call-an-attorney/">When People Consider Calling an Attorney</a></li>
+      <li><a href="/las-vegas/how-to-choose-a-lawyer/">How People Choose a Lawyer</a></li>
+      <li><a href="/las-vegas/faq/">Las Vegas FAQ</a></li>
+    </ul>
+  </section>
+
+  <section class="directory">
+    <h2>Las Vegas Law Firm Directory (Informational)</h2>
+    <p>
+      The directory below includes law firms that publicly indicate they serve
+      clients in Las Vegas, Nevada. Inclusion is based on publicly available information
+      and does not imply qualification, specialization, or endorsement.
+    </p>
+
+    <button type="button" class="directory-toggle" aria-expanded="false" aria-controls="las-vegas-directory" onclick="toggleDirectory()">
+      View all firms
+    </button>
+
+    <section class="sponsor-stack" data-sponsor-stack="las-vegas-index-bottom">
+      <h3 class="sponsor-label">Advertising</h3>
+      <div class="sponsor-items"></div>
+    </section>
+
+    <div id="las-vegas-directory" hidden>
+      <div id="verified-listings"></div>
+      <div id="other-listings"></div>
+
+      <p class="listing-disclaimer">
+        Directory listings are provided for informational purposes only.
+        Advertising placements, when present, are clearly labeled.
+        No guarantees or outcomes are stated or implied.
+      </p>
+    </div>
+  </section>
+
+  <section class="cross-links">
+    <p><strong>Looking for Las Vegas Law Firm Listings?</strong></p>
+    <p>
+      To view a complete informational list of law firms that publicly indicate they serve the Las Vegas area,
+      visit the <a href="/las-vegas/">Las Vegas Accident Guide</a>.
+    </p>
+    <p>
+      For general accident education not specific to Las Vegas, see our
+      <a href="/guides/">Accident & Injury Guides</a>.
+    </p>
+  </section>
+
+
+</main>
+
+<footer>
+  <p class="footer-note">
+    Educational content only. No legal advice. No medical advice.
+    No guarantees or endorsements.
+  </p>
+</footer>
+
+<script src="/assets/js/scripts.js"></script>
+
+<script>
+  function toggleDirectory() {
+    const btn = document.querySelector(".directory-toggle");
+    const dir = document.getElementById("las-vegas-directory");
+    const expanded = btn.getAttribute("aria-expanded") === "true";
+    btn.setAttribute("aria-expanded", String(!expanded));
+    btn.textContent = expanded ? "View all firms" : "Hide firm list";
+    dir.hidden = expanded;
+  }
+</script>
+
+</body>
+</html>
