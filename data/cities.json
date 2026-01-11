@@ -17,20 +17,77 @@
   "has_directory": true
 },
     {
-      "slug": "orlando",
-      "name": "Orlando, FL",
-      "status": "coming_soon"
-    },
-    {
-      "slug": "dallas",
-      "name": "Dallas, TX",
-      "status": "coming_soon"
-    },
-    {
-      "slug": "atlanta",
-      "name": "Atlanta, GA",
-      "status": "coming_soon"
-    }
+    "slug": "orlando",
+    "name": "Orlando, FL",
+    "status": "live",
+    "buyout_price": 14500,
+    "categories": 9,
+    "has_directory": true
+  },
+  {
+    "slug": "dallas",
+    "name": "Dallas, TX",
+    "status": "live",
+    "buyout_price": 14500,
+    "categories": 9,
+    "has_directory": true
+  },
+  {
+    "slug": "atlanta",
+    "name": "Atlanta, GA",
+    "status": "live",
+    "buyout_price": 14500,
+    "categories": 9,
+    "has_directory": true
+  },
+  {
+    "slug": "memphis",
+    "name": "Memphis, TN",
+    "status": "live",
+    "buyout_price": 14500,
+    "categories": 9,
+    "has_directory": true
+  },
+  {
+    "slug": "new-york-city",
+    "name": "New York City, NY",
+    "status": "live",
+    "buyout_price": 14500,
+    "categories": 9,
+    "has_directory": true
+  },
+  {
+    "slug": "los-angeles",
+    "name": "Los Angeles, CA",
+    "status": "live",
+    "buyout_price": 14500,
+    "categories": 9,
+    "has_directory": true
+  },
+  {
+    "slug": "chicago",
+    "name": "Chicago, IL",
+    "status": "live",
+    "buyout_price": 14500,
+    "categories": 9,
+    "has_directory": true
+  },
+  {
+    "slug": "charlotte",
+    "name": "Charlotte, NC",
+    "status": "live",
+    "buyout_price": 14500,
+    "categories": 9,
+    "has_directory": true
+  },
+  {
+    "slug": "cleveland",
+    "name": "Cleveland, OH",
+    "status": "live",
+    "buyout_price": 14500,
+    "categories": 9,
+    "has_directory": true
+  }
   ],
 
   "buyouts": {
