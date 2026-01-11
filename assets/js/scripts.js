@@ -1,54 +1,56 @@
-// scripts.js — Final, production-ready
-// Dynamic listings, sponsors, and hotlink support
+// scripts.js — production-ready (v2)
+// Dynamic listings + sponsor stacks + safe hotlink fallback
 // HTML IMMUTABLE — all logic lives here
 
 document.addEventListener("DOMContentLoaded", () => {
-  const city = document.body.dataset.city;
-  const category = document.body.dataset.category;
+  const city = (document.body.dataset.city || "").trim();
+  const category = (document.body.dataset.category || "").trim();
+
+  // Sponsor stacks can exist on global pages too (e.g., /guides/)
+  initSponsorStacks(city);
 
   if (!city) return;
 
-  if (city === "phoenix") {
-    loadPhoenix(category);
-  } else {
-    loadFutureCity(city, category);
-  }
+  // Listings are only expected on pages that include the directory containers
+  initCityListings(city, category);
 });
 
 /* -----------------------------
-   PHOENIX (CANONICAL)
+   CITY LISTINGS LOADER (FULL CITY → FALLBACK HOTLINK)
 ----------------------------- */
 
-function loadPhoenix(category) {
-  fetch("/data/phoenix_listings.json")
-    .then(res => res.json())
-    .then(data => {
-      renderPhoenixListings(data);
-      injectCityWideSponsor();
-    })
-    .catch(err => console.error("Phoenix load failed:", err));
+async function initCityListings(city, category) {
+  const fullListingsUrl = `/data/${city}_listings.json`;
+  try {
+    const res = await fetch(fullListingsUrl, { cache: "no-store" });
+    if (res.ok) {
+      const firms = await res.json();
+      renderFullCityListings(firms, category);
+      return;
+    }
+  } catch (e) {
+    // fall through to hotlink
+  }
+
+  // Fallback: legacy hotlink mode (/data/${city}.json)
+  try {
+    const res = await fetch(`/data/${city}.json`, { cache: "no-store" });
+    if (!res.ok) throw new Error("Hotlink JSON not found");
+    const data = await res.json();
+    renderHotlinkListings(data.listings, category);
+    injectHotlinkImages(data.images);
+  } catch (err) {
+    console.error("City listings load failed:", err);
+  }
 }
 
 /* -----------------------------
-   FUTURE CITIES (HOTLINK MODE)
+   FULL CITY RENDER (PHOENIX MODEL)
+   - Works for Phoenix + all full cities
+   - If category-specific flags exist later, we can filter safely
 ----------------------------- */
 
-function loadFutureCity(city, category) {
-  fetch(`/data/${city}.json`)
-    .then(res => res.json())
-    .then(data => {
-      renderListings(data.listings, category);
-      injectCityWideSponsor(data.citywide_sponsor);
-      injectHotlinkImages(data.images);
-    })
-    .catch(err => console.error("Future city load failed:", err));
-}
-
-/* -----------------------------
-   PHOENIX LISTINGS RENDER (NEW MODEL)
------------------------------ */
-
-function renderPhoenixListings(firms) {
+function renderFullCityListings(firms, category) {
   const verifiedEl = document.getElementById("verified-listings");
   const otherEl = document.getElementById("other-listings");
   if (!verifiedEl || !otherEl) return;
@@ -56,20 +58,30 @@ function renderPhoenixListings(firms) {
   verifiedEl.innerHTML = "";
   otherEl.innerHTML = "";
 
-  const visible = firms.filter(f => f.display === true);
+  // Only show firms explicitly marked display=true
+  const visible = Array.isArray(firms) ? firms.filter(f => f && f.display === true) : [];
 
-  const verified = visible.filter(f => f.verified === true);
-  const other = visible.filter(f => f.verified !== true);
+  // Optional future compatibility: if firm.categories exists, allow category filtering
+  const filtered = category
+    ? visible.filter(f => {
+        if (!f.categories) return true; // if not categorized, keep visible
+        return f.categories?.[category] === true || f.categories?.[category] === false;
+      })
+    : visible;
+
+  const verified = filtered.filter(f => f.verified === true);
+  const other = filtered.filter(f => f.verified !== true);
 
   verified.forEach(f => verifiedEl.appendChild(listingCard(f)));
+
   other.forEach(f => otherEl.appendChild(listingCard(f)));
 }
 
 /* -----------------------------
-   LEGACY RENDER (FUTURE CITIES)
+   LEGACY HOTLINK RENDER (FUTURE CITIES MODE)
 ----------------------------- */
 
-function renderListings(firms, category) {
+function renderHotlinkListings(firms, category) {
   if (!category) return;
 
   const verifiedEl = document.getElementById("verified-listings");
@@ -79,19 +91,19 @@ function renderListings(firms, category) {
   verifiedEl.innerHTML = "";
   otherEl.innerHTML = "";
 
-  const verified = firms.filter(f => f.categories?.[category] === true);
-  const other = firms.filter(f => f.categories?.[category] === false);
+  const arr = Array.isArray(firms) ? firms : [];
+
+  const verified = arr.filter(f => f?.categories?.[category] === true);
+  const other = arr.filter(f => f?.categories?.[category] === false);
 
   verified.forEach(f => verifiedEl.appendChild(listingCard(f)));
 
   const MIN_OTHER = 10;
-  other.slice(0, MIN_OTHER).forEach(f =>
-    otherEl.appendChild(listingCard(f))
-  );
+  other.slice(0, MIN_OTHER).forEach(f => otherEl.appendChild(listingCard(f)));
 }
 
 /* -----------------------------
-   LISTING CARD
+   LISTING CARD (NEUTRAL)
 ----------------------------- */
 
 function listingCard(firm) {
@@ -99,9 +111,7 @@ function listingCard(firm) {
   card.className = "listing-card";
 
   const websiteLink = firm.website
-    ? `<a href="${firm.website}" target="_blank" rel="noopener noreferrer">
-         Visit firm website
-       </a>`
+    ? `<a href="${firm.website}" target="_blank" rel="noopener noreferrer">Visit firm website</a>`
     : "";
 
   const labels = [];
@@ -109,11 +119,11 @@ function listingCard(firm) {
   if (firm.verified) labels.push("Verified listing");
 
   card.innerHTML = `
-    <h3>${firm.name}</h3>
+    <h3>${escapeHtml(firm.name || "Firm")}</h3>
     ${websiteLink}
     ${
       labels.length
-        ? `<p class="listing-note">${labels.join(" · ")}</p>`
+        ? `<p class="listing-note">${labels.map(escapeHtml).join(" · ")}</p>`
         : `<p class="listing-note">Directory listing — no endorsement implied.</p>`
     }
   `;
@@ -121,73 +131,45 @@ function listingCard(firm) {
   return card;
 }
 
-/* -----------------------------
-   CITY-WIDE SPONSOR
------------------------------ */
-
-function injectCityWideSponsor(sponsorData = null) {
-  const container = document.querySelector(".citywide-sponsor");
-  if (!container) return;
-
-  if (!sponsorData) {
-    container.innerHTML = `
-      <div class="sponsor-banner">
-        <strong>City-Wide Sponsorship Available</strong>
-        <p>Advertising opportunity — educational content remains independent.</p>
-      </div>
-    `;
-    return;
-  }
-
-  container.innerHTML = `
-    <div class="sponsor-banner">
-      <strong>${sponsorData.name}</strong>
-      <a href="${sponsorData.url}" target="_blank" rel="noopener noreferrer">
-        Visit sponsor website
-      </a>
-      <p class="listing-note">Advertising</p>
-    </div>
-  `;
+function escapeHtml(str) {
+  return String(str).replace(/[&<>"']/g, (m) => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;"
+  }[m]));
 }
 
 /* -----------------------------
-   HOTLINK IMAGES (FUTURE CITIES)
+   SPONSOR STACK LOADER (CITY SPONSORS → GLOBAL → PHOENIX FALLBACK)
+   Supports BOTH attributes:
+   - data-sponsor-stack="key"
+   - data-stack="key" (legacy)
 ----------------------------- */
 
-function injectHotlinkImages(images) {
-  if (!images) return;
+async function initSponsorStacks(city) {
+  const sponsorData = await loadSponsorData(city);
 
-  Object.keys(images).forEach(key => {
-    const img = document.querySelector(`img[data-img="${key}"]`);
-    if (img) img.src = images[key];
-  });
-}
-/* -----------------------------
-   SPONSOR STACK LOADER
------------------------------ */
+  const stacks = document.querySelectorAll("[data-sponsor-stack], [data-stack]");
+  if (!stacks.length) return;
 
-fetch("/data/phoenix_sponsors.json")
-  .then(res => res.json())
-  .then(data => {
-    document.querySelectorAll("[data-sponsor-stack]").forEach(stack => {
-      const key = stack.dataset.sponsorStack;
-      const items = data[key];
-      if (!items || !items.length) return;
+  stacks.forEach(stack => {
+    const keyRaw = (stack.dataset.sponsorStack || stack.dataset.stack || "").trim();
+    if (!keyRaw) return;
 
-      const container = stack.querySelector(".sponsor-items");
+    const candidates = buildSponsorKeyCandidates(keyRaw, city);
 
-      items.forEach(s => {
-        const div = document.createElement("div");
-        div.className = "sponsor-item";
-        div.innerHTML = `
-          <strong>${s.name}</strong>
-          <a href="${s.url}" target="_blank" rel="noopener noreferrer">
-            Visit sponsor website
-          </a>
-          <p class="listing-note">${s.label || "Advertising"}</p>
-        `;
-        container.appendChild(div);
-      });
-    });
-  })
-  .catch(err => console.error("Sponsor load failed:", err));
+    let items = null;
+    for (const k of candidates) {
+      if (sponsorData && Object.prototype.hasOwnProperty.call(sponsorData, k)) {
+        items = sponsorData[k];
+        break;
+      }
+    }
+
+    // If stack exists but no items, leave it empty (no stubs)
+    if (!Array.isArray(items) || !items.length) return;
+
+    const container = stack.querySelector(".sponsor-items");
+    if (!containe
