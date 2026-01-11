@@ -9,10 +9,13 @@
       "has_directory": true
     },
     {
-      "slug": "las-vegas",
-      "name": "Las Vegas, NV",
-      "status": "coming_soon"
-    },
+  "slug": "las-vegas",
+  "name": "Las Vegas, NV",
+  "status": "live",
+  "buyout_price": 14500,
+  "categories": 9,
+  "has_directory": true
+},
     {
       "slug": "orlando",
       "name": "Orlando, FL",
