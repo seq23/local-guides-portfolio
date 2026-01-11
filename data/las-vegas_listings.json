@@ -1,0 +1,1183 @@
+[
+  {
+    "id": "lv-001",
+    "name": "Leonard H. Stone",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Wrongful Death",
+      "Trucking Accident"
+    ],
+    "website": "https://www.shookandstone.com/",
+    "phone": "(702) 848-5016",
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-002",
+    "name": "John B. Shook",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Car Accidents",
+      "Medical Malpractice"
+    ],
+    "website": "http://www.shookandstone.com",
+    "phone": "(702) 489-0617",
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-003",
+    "name": "Qumars Behzadi",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Car Accidents",
+      "Workers Compensation"
+    ],
+    "website": "http://behzadilaw.com/",
+    "phone": "(775) 402-8168",
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-004",
+    "name": "Jordan Philip Schnitzer",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Car Accidents",
+      "Wrongful Death"
+    ],
+    "website": "https://theschnitzerlawfirm.com/",
+    "phone": "(702) 960-1902",
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-005",
+    "name": "Saman R. Heidari",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Business",
+      "Employment & Labor"
+    ],
+    "website": "https://www.HeidariLawGroup.com",
+    "phone": "(844) 414-0586",
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "lv-006",
+    "name": "James Oronoz",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Criminal Defense",
+      "Car Accidents"
+    ],
+    "website": "https://oelawyers.com/",
+    "phone": "(702) 832-4037",
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-007",
+    "name": "Bradley Myers",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Car Accidents",
+      "Slip and Fall Accident"
+    ],
+    "website": "https://the702firm.com/",
+    "phone": "(702) 473-1585",
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-008",
+    "name": "Bryan A. Boyack",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Workers Compensation"
+    ],
+    "website": "https://boyacklawgroup.com/",
+    "phone": "(833) 625-1155",
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "lv-009",
+    "name": "Neama Rahmani",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Employment & Labor",
+      "Car Accidents"
+    ],
+    "website": "https://westcoast.lawfirms.com/motor-vehicle-accidents-ca/",
+    "phone": "(213) 237-1900",
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-010",
+    "name": "Sandy Van",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Car Accidents",
+      "Trucking Accident"
+    ],
+    "website": "https://vanlawfirm.com/",
+    "phone": "(725) 900-3901",
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-011",
+    "name": "Adrian Karimi",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Criminal Defense",
+      "Workers Compensation"
+    ],
+    "website": "http://karimilawgroup.com/",
+    "phone": "(702) 553-1774",
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "lv-012",
+    "name": "Anthony Joseph Perez",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Car Accidents"
+    ],
+    "website": "https://www.alldaylawfirm.com",
+    "phone": "(844) 505-3903",
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-013",
+    "name": "Daniel S. Simon",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Car Accidents",
+      "Wrongful Death"
+    ],
+    "website": "https://simonlawlv.com/firm-profile/",
+    "phone": "(702) 819-8835",
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-014",
+    "name": "George T. Bochanis",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Wrongful Death",
+      "Slip and Fall Accident"
+    ],
+    "website": "https://lvaccident.com",
+    "phone": "(877) 311-1820",
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-015",
+    "name": "Dale A. Hayes",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Litigation",
+      "DUI & DWI"
+    ],
+    "website": "https://www.duilawyersoflasvegas.com/",
+    "phone": "(702) 570-8229",
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "lv-016",
+    "name": "Eran Lagstein",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Car Accidents",
+      "Employment & Labor"
+    ],
+    "website": "http://www.losangeles-personalinjuryattorney.com",
+    "phone": "(323) 815-7439",
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-017",
+    "name": "G. Mark Albright",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Litigation",
+      "Business"
+    ],
+    "website": "https://www.albrightstoddard.com/",
+    "phone": "(702) 410-6562",
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "lv-018",
+    "name": "Robert B Sidell",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Car Accidents",
+      "Motorcycle Accident"
+    ],
+    "website": "http://lasvegasattorney.com",
+    "phone": "(702) 820-5391",
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-019",
+    "name": "Gina M. Corena",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Car Accidents",
+      "Wrongful Death"
+    ],
+    "website": "http://www.corenalaw.com",
+    "phone": "(855) 231-9347",
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-020",
+    "name": "Ryan Alexander",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury"
+    ],
+    "website": "http://ryanalexander.com",
+    "phone": "(702) 583-7706",
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "lv-021",
+    "name": "William T. Sykes",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Car Accidents",
+      "Defective and Dangerous Products"
+    ],
+    "website": "https://csgtrials.com/",
+    "phone": "(702) 997-2887",
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-022",
+    "name": "Tin Hwang",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Criminal Defense",
+      "Divorce & Separation"
+    ],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "lv-023",
+    "name": "Daniel Mark Dastrup",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Car Accidents",
+      "Slip and Fall Accident"
+    ],
+    "website": "http://www.boyacklawgroup.com",
+    "phone": "(702) 745-5365",
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-024",
+    "name": "Dallas Horton",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Car Accidents",
+      "Wrongful Death"
+    ],
+    "website": "https://gdallashorton.com",
+    "phone": "(702) 623-3721",
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-025",
+    "name": "Samuel Mirejovsky",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Car Accidents",
+      "Motorcycle Accident"
+    ],
+    "website": "https://samandashlaw.com/las-vegas/",
+    "phone": "(855) 952-2517",
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-026",
+    "name": "Farhan R. Naqvi",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Car Accidents",
+      "Wrongful Death"
+    ],
+    "website": "https://naqvilaw.com/",
+    "phone": "(702) 605-1916",
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-027",
+    "name": "Joseph W. Riccio",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Family"
+    ],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "lv-028",
+    "name": "Christopher Kevin Beckstrom",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Car Accidents",
+      "Trucking Accident"
+    ],
+    "website": "https://www.pricebeckstromlaw.com/",
+    "phone": "(702) 941-8708",
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-029",
+    "name": "Eric R Blank",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Workers Compensation",
+      "Criminal Defense"
+    ],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "lv-030",
+    "name": "Ashley Morgan Watkins",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Car Accidents",
+      "Wrongful Death"
+    ],
+    "website": "http://samandashlaw.com",
+    "phone": "(833) 475-0276",
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-031",
+    "name": "Philip H. Brown",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Criminal Defense",
+      "Domestic Violence"
+    ],
+    "website": "https://www.thelasvegasdefender.com/",
+    "phone": "(702) 793-2686",
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "lv-032",
+    "name": "Aaron Heaton",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury"
+    ],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "lv-033",
+    "name": "Paul D. Powell",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Trucking Accident",
+      "Wrongful Death"
+    ],
+    "website": "https://paulpowell.com/",
+    "phone": "(844) 967-2615",
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-034",
+    "name": "Jared Reed Richards",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Car Accidents",
+      "Motorcycle Accident"
+    ],
+    "website": "https://www.clearcounsel.com/about-us/our-team/jared-richards/",
+    "phone": "(702) 820-5051",
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-035",
+    "name": "Sagar R. Raich",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Business",
+      "Contracts & Agreements"
+    ],
+    "website": "http://www.raichattorneys.com",
+    "phone": "(702) 761-3248",
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "lv-036",
+    "name": "Craig William Drummond",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Mediation",
+      "Arbitration"
+    ],
+    "website": "https://www.drummondfirm.com/",
+    "phone": "(866) 756-3692",
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "lv-037",
+    "name": "Stephen M. Dixon",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Car Accidents"
+    ],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-038",
+    "name": "Joshua L. Tomsheck",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Criminal Defense",
+      "DUI & DWI"
+    ],
+    "website": "http://www.lvnvlawfirm.com",
+    "phone": "(702) 550-1489",
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "lv-039",
+    "name": "Kyle P. Cottner",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "DUI & DWI",
+      "Criminal Defense"
+    ],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "lv-040",
+    "name": "Ben J. Bingham",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Wrongful Death",
+      "Car Accidents"
+    ],
+    "website": "https://www.bensonbingham.com",
+    "phone": "(855) 768-3986",
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-041",
+    "name": "Joseph Zvi Gersten",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Criminal Defense",
+      "Family"
+    ],
+    "website": "http://www.thegerstenlawfirm.com",
+    "phone": "(855) 517-2093",
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "lv-042",
+    "name": "Marcus A. Berg",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Workers Compensation",
+      "Motorcycle Accident"
+    ],
+    "website": "http://www.mossberginjurylaw.com",
+    "phone": "(702) 500-1954",
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-043",
+    "name": "Daniel Robert Price",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Animal & Dog Bites",
+      "Motorcycle Accident"
+    ],
+    "website": "http://www.pricebeckstromlaw.com",
+    "phone": "(844) 440-7449",
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-044",
+    "name": "Lewis John Gazda",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Car Accidents",
+      "Spinal Cord Injury"
+    ],
+    "website": "http://www.GazdaTadayon.com",
+    "phone": "(702) 623-1495",
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-045",
+    "name": "Daniel Frederick Lippmann",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Criminal Defense",
+      "Domestic Violence"
+    ],
+    "website": "https://defenseattorneyvegas.com/",
+    "phone": "(702) 745-2363",
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "lv-046",
+    "name": "Benjamin P. Cloward",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Wrongful Death",
+      "Motorcycle Accident"
+    ],
+    "website": "http://www.TheFierceFirm.com",
+    "phone": "(866) 545-3168",
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-047",
+    "name": "Hector J. Carbajal",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Litigation",
+      "Car Accidents"
+    ],
+    "website": "https://www.carbajallaw.vegas/",
+    "phone": "(844) 914-2851",
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-048",
+    "name": "Kyle R. Tatum",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Criminal Defense",
+      "Litigation"
+    ],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "lv-049",
+    "name": "Benjamin C. Durham",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Criminal Defense"
+    ],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "lv-050",
+    "name": "Adam S. Kutner",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Car Accidents"
+    ],
+    "website": "https://www.askadamskutner.com/",
+    "phone": "(702) 848-5087",
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-051",
+    "name": "Ronald W Truman",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Litigation",
+      "Motorcycle Accident"
+    ],
+    "website": "https://trumanlawfirm.com/",
+    "phone": "(435) 359-4683",
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-052",
+    "name": "Jakub P. Medrala",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Litigation",
+      "Real Estate"
+    ],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "lv-053",
+    "name": "Jonathan T Remmel",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Car Accidents",
+      "Wrongful Death"
+    ],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-054",
+    "name": "Joel Gary Selik",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Debt Collection",
+      "Ethics & Professional Responsibility"
+    ],
+    "website": "http://www.canvlaw.com/",
+    "phone": "(760) 891-5767",
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "lv-055",
+    "name": "Mike H. T. Nguyen",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury"
+    ],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "lv-056",
+    "name": "Adam Williams",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Car Accidents",
+      "Defective and Dangerous Products"
+    ],
+    "website": "https://www.lvpersonalinjurylawyers.com",
+    "phone": "(855) 490-8677",
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-057",
+    "name": "T. Louis Palazzo",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Criminal Defense",
+      "Federal Crime"
+    ],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "lv-058",
+    "name": "Jordan Butler",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Immigration",
+      "Consumer Protection"
+    ],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "lv-059",
+    "name": "Jonathan W. Barlow",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Probate",
+      "Estate Planning"
+    ],
+    "website": "https://www.clearcounsel.com",
+    "phone": "(702) 476-5900",
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "lv-060",
+    "name": "Dale A. Hayes",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Litigation"
+    ],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "lv-061",
+    "name": "Gary M. Zernich",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Family"
+    ],
+    "website": "https://lvfamilylaw.com/",
+    "phone": "(833) 720-0705",
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "lv-062",
+    "name": "Alice S. Denton",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Probate",
+      "Estate Planning"
+    ],
+    "website": "https://dentoncho.com/",
+    "phone": "(702) 966-9593",
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "lv-063",
+    "name": "Michael A. Federico",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Criminal Defense",
+      "Civil Rights"
+    ],
+    "website": "http://www.guarddoglaw.com",
+    "phone": "(844) 264-9906",
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "lv-064",
+    "name": "George G. Trachtman",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Arbitration"
+    ],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "lv-065",
+    "name": "Timothy Andrew Mott",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury"
+    ],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "lv-066",
+    "name": "Calder B. Gabroy",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Family",
+      "Landlord & Tenant"
+    ],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "lv-067",
+    "name": "Afshin Tadayon",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Criminal Defense"
+    ],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "lv-068",
+    "name": "Peter Mazzeo",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Car Accidents",
+      "Wrongful Death"
+    ],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-069",
+    "name": "Thomas A. Ericsson",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Criminal Defense",
+      "Car Accidents"
+    ],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-070",
+    "name": "Joseph L. Benson",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Animal & Dog Bites",
+      "Brain Injury"
+    ],
+    "website": "https://www.bensonbingham.com",
+    "phone": "(702) 819-0374",
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "lv-071",
+    "name": "Bradley S. Mainor",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Car Accidents",
+      "Brain Injury"
+    ],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-072",
+    "name": "David Mincin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Real Estate",
+      "Bankruptcy & Debt"
+    ],
+    "website": "http://www.mincinlaw.com",
+    "phone": "(888) 572-6608",
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "lv-073",
+    "name": "Kim E. Welch",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Car Accidents"
+    ],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  },
+  {
+    "id": "lv-074",
+    "name": "Judah Zakalik",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Bankruptcy & Debt",
+      "Chapter 7 Bankruptcy"
+    ],
+    "website": null,
+    "phone": null,
+    "display": true,
+    "verified": false,
+    "sponsored": false
+  },
+  {
+    "id": "lv-075",
+    "name": "Jamie S. Cogburn",
+    "city": "Las Vegas",
+    "state": "NV",
+    "practice_areas": [
+      "Personal Injury",
+      "Motorcycle Accident",
+      "Car Accidents"
+    ],
+    "website": "https://cdinjury.com/",
+    "phone": "(844) 791-5021",
+    "display": true,
+    "verified": true,
+    "sponsored": false
+  }
+]
