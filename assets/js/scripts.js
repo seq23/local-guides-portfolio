@@ -1,7 +1,3 @@
-// scripts.js — production-ready (v2)
-// Dynamic listings + sponsor stacks + safe hotlink fallback
-// HTML IMMUTABLE — all logic lives here
-
 document.addEventListener("DOMContentLoaded", () => {
   const city = (document.body.dataset.city || "").trim();
   const category = (document.body.dataset.category || "").trim();
@@ -73,7 +69,6 @@ function renderFullCityListings(firms, category) {
   const other = filtered.filter(f => f.verified !== true);
 
   verified.forEach(f => verifiedEl.appendChild(listingCard(f)));
-
   other.forEach(f => otherEl.appendChild(listingCard(f)));
 }
 
@@ -172,4 +167,108 @@ async function initSponsorStacks(city) {
     if (!Array.isArray(items) || !items.length) return;
 
     const container = stack.querySelector(".sponsor-items");
-    if (!containe
+    if (!container) return;
+
+    container.innerHTML = "";
+
+    items.forEach(s => {
+      const div = document.createElement("div");
+      div.className = "sponsor-item";
+      div.innerHTML = `
+        <strong>${escapeHtml(s.name || "Sponsor")}</strong>
+        ${s.url ? `<a href="${s.url}" target="_blank" rel="noopener noreferrer">Visit sponsor website</a>` : ""}
+        <p class="listing-note">${escapeHtml(s.label || "Advertising")}</p>
+      `;
+      container.appendChild(div);
+    });
+  });
+}
+
+async function loadSponsorData(city) {
+  const candidates = [];
+
+  if (city) candidates.push(`/data/${city}_sponsors.json`);
+
+  // Optional global sponsor file (if you add later)
+  candidates.push(`/data/global_sponsors.json`);
+
+  // Safe fallback for older repos
+  candidates.push(`/data/phoenix_sponsors.json`);
+
+  for (const url of candidates) {
+    try {
+      const res = await fetch(url, { cache: "no-store" });
+      if (!res.ok) continue;
+      const data = await res.json();
+      if (data && typeof data === "object") return data;
+    } catch (e) {
+      // keep trying
+    }
+  }
+
+  return {};
+}
+
+function buildSponsorKeyCandidates(key, city) {
+  const out = [];
+
+  // 1) as-is
+  out.push(key);
+
+  // 2) Legacy shorthand normalization (phoenix-car-top -> phoenix-car-accidents-top)
+  const normalized = normalizeLegacySponsorKey(key);
+  if (normalized && normalized !== key) out.push(normalized);
+
+  // 3) Global guide compatibility (global-guides -> phoenix-guides -> guides)
+  if (key === "global-guides") {
+    out.push("phoenix-guides");
+    out.push("guides");
+  }
+
+  // 4) If city is present and key starts with city but uses underscore (rare), normalize
+  if (city && key.startsWith(city.replace("-", "_"))) {
+    out.push(key.replace(/_/g, "-"));
+  }
+
+  return out;
+}
+
+function normalizeLegacySponsorKey(key) {
+  // Matches: "{prefix}-{short}-{pos}" where short is old category shorthand
+  const m = key.match(/^(.+)-(car|truck|slip|bicycle|motorcycle|pedestrian|rideshare|construction|wrongful)-(top|mid|bottom)$/);
+  if (!m) return null;
+
+  const prefix = m[1];
+  const short = m[2];
+  const pos = m[3];
+
+  const map = {
+    car: "car-accidents",
+    truck: "truck-accidents",
+    slip: "slip-and-fall",
+    bicycle: "bicycle-accidents",
+    motorcycle: "motorcycle-accidents",
+    pedestrian: "pedestrian-accidents",
+    rideshare: "rideshare-accidents",
+    construction: "construction-accidents",
+    wrongful: "wrongful-death"
+  };
+
+  const full = map[short];
+  if (!full) return null;
+
+  return `${prefix}-${full}-${pos}`;
+}
+
+/* -----------------------------
+   HOTLINK IMAGES (LEGACY)
+----------------------------- */
+
+function injectHotlinkImages(images) {
+  if (!images || typeof images !== "object") return;
+
+  Object.keys(images).forEach(key => {
+    const img = document.querySelector(`img[data-img="${key}"]`);
+    if (img) img.src = images[key];
+  });
+}
