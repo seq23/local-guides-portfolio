@@ -37,20 +37,20 @@
 
   <!-- INTRO -->
   <section class="page-intro">
-  <h2>What This Site Is</h2>
-  <p class="lede">
-    The Accident Guides is an independent educational resource for people researching
-    accidents, injuries, and recovery topics.
-  </p>
-  <p>
-    We publish plain-language guides, timelines, and checklists to help readers
-    understand topics they are already looking up — before speaking with a professional.
-  </p>
-  <p>
-    Coverage is organized by city where appropriate. Phoenix, Arizona is currently live,
-    with additional major U.S. cities launching next.
-  </p>
-</section>
+    <h2>What This Site Is</h2>
+    <p class="lede">
+      The Accident Guides is an independent educational resource for people researching
+      accidents, injuries, and recovery topics.
+    </p>
+    <p>
+      We publish plain-language guides, timelines, and checklists to help readers
+      understand topics they are already looking up — before speaking with a professional.
+    </p>
+    <p>
+      Coverage is organized by city where appropriate. Live cities are linked below as they
+      become available.
+    </p>
+  </section>
 
   <!-- WHAT YOU CAN DO -->
   <section class="action-list">
@@ -99,18 +99,24 @@
       </em>
     </p>
 
-    <ul>
-      <li>
-        <strong><a href="/phoenix/">Phoenix, AZ</a></strong> — Live
-      </li>
+    <!-- JS-rendered city list (prevents dead links) -->
+    <ul id="cityList">
+      <!-- Minimal no-JS fallback -->
+      <li><strong><a href="/phoenix/">Phoenix, AZ</a></strong> — Live</li>
       <li>Las Vegas, NV — Coming soon</li>
       <li>Orlando, FL — Coming soon</li>
       <li>Dallas, TX — Coming soon</li>
       <li>Atlanta, GA — Coming soon</li>
+      <li>Memphis, TN — Coming soon</li>
+      <li>New York City, NY — Coming soon</li>
+      <li>Los Angeles, CA — Coming soon</li>
+      <li>Chicago, IL — Coming soon</li>
+      <li>Charlotte, NC — Coming soon</li>
+      <li>Cleveland, OH — Coming soon</li>
     </ul>
 
-    <p class="cities-note">
-      Only Phoenix is active and clickable at this time.
+    <p class="cities-note" id="citiesNote">
+      Cities are linked when live and available.
     </p>
   </section>
 
@@ -127,6 +133,99 @@
     <a href="/privacy/">Privacy</a>
   </nav>
 </footer>
+
+<script>
+  (function () {
+    const listEl = document.getElementById("cityList");
+    const noteEl = document.getElementById("citiesNote");
+
+    function escapeHtml(str) {
+      return String(str).replace(/[&<>"']/g, (m) => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;"
+      }[m]));
+    }
+
+    async function urlExists(path) {
+      // Prefer HEAD, but fall back to GET if HEAD is blocked by hosting config.
+      try {
+        const headRes = await fetch(path, { method: "HEAD", cache: "no-store" });
+        if (headRes.ok) return true;
+        // Some CDNs return 405 on HEAD; fall through to GET.
+      } catch (e) { /* ignore */ }
+
+      try {
+        const getRes = await fetch(path, { method: "GET", cache: "no-store" });
+        return getRes.ok;
+      } catch (e) {
+        return false;
+      }
+    }
+
+    async function renderCities() {
+      try {
+        const res = await fetch("/data/cities.json", { cache: "no-store" });
+        if (!res.ok) throw new Error("Failed to load /data/cities.json");
+        const data = await res.json();
+        const cities = Array.isArray(data.cities) ? data.cities : [];
+
+        // Sort: live first, then coming soon; then alphabetically by name
+        cities.sort((a, b) => {
+          const aLive = (a.status || "") === "live" ? 0 : 1;
+          const bLive = (b.status || "") === "live" ? 0 : 1;
+          if (aLive !== bLive) return aLive - bLive;
+          return String(a.name || "").localeCompare(String(b.name || ""));
+        });
+
+        // Build list: only link if the folder actually exists.
+        const items = [];
+        let linkedCount = 0;
+
+        for (const c of cities) {
+          const slug = (c.slug || "").trim();
+          const name = (c.name || "").trim();
+          if (!slug || !name) continue;
+
+          const cityPath = `/${slug}/`;
+          const exists = await urlExists(cityPath);
+
+          const isConfiguredLive = (c.status || "") === "live";
+          const label = exists ? "Live" : (isConfiguredLive ? "Launching" : "Coming soon");
+
+          if (exists) linkedCount++;
+
+          const safeName = escapeHtml(name);
+          const safeLabel = escapeHtml(label);
+
+          if (exists) {
+            items.push(`<li><strong><a href="${cityPath}">${safeName}</a></strong> — ${safeLabel}</li>`);
+          } else {
+            items.push(`<li>${safeName} — ${safeLabel}</li>`);
+          }
+        }
+
+        // Replace the fallback list only if we successfully rendered items
+        if (items.length) {
+          listEl.innerHTML = items.join("\n");
+        }
+
+        if (noteEl) {
+          noteEl.textContent = linkedCount > 0
+            ? `${linkedCount} city${linkedCount === 1 ? "" : "ies"} currently live and clickable.`
+            : "Cities are linked when live and available.";
+        }
+      } catch (err) {
+        // Keep fallback list; don’t break the page.
+        if (noteEl) noteEl.textContent = "Cities are linked when live and available.";
+      }
+    }
+
+    renderCities();
+  })();
+</script>
 
 </body>
 </html>
